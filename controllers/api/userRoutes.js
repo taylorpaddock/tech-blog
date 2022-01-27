@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         });
 });
 
@@ -50,7 +50,7 @@ router.get('/:id', (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         });
 });
 
@@ -73,7 +73,7 @@ router.post('/', (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         });
 });
 
@@ -104,7 +104,7 @@ router.post('/login', (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         });
 });
 
@@ -135,7 +135,7 @@ router.put('/:id', (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         });
 
 });
@@ -155,7 +155,7 @@ router.delete('/:id', (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         });
 });
 
