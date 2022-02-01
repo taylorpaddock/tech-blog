@@ -1,13 +1,16 @@
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
+<div>
+  <a href="/dashboard/create/"><button id="create-post" class="btn">create post</button></a>
+        
+  <h2 for="title" class="form-label">Your Posts</h2><hr>
+  {{#if posts.length}}
+    </div>
     {{#each posts as |post|}}
-      {{> dashboard-post post}}
+    {{> post-content post}}
+            <a href="/dashboard/edit/{{post.id}}"><button class="btn">edit post</button></a>
+        </div>
     {{/each}}
 
-</section>
+{{else}}
+<h6>you do not currently have any posts</h6>
+
 {{/if}}
-
-<button type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Post</a></button>
-
-<script src="/js/add-post.js"></script>

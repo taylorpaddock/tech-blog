@@ -21,10 +21,8 @@ async function commentFormHandler(event) {
 
         if (response.ok) {
             document.location.reload();
-
         } else {
             alert(response.statusText);
-            document.querySelector('#comment-form').style.display = "block";
         }
     }
 }
