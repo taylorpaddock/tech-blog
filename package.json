@@ -17,5 +17,15 @@
     "express-session": "^1.17.2",
     "mysql2": "^2.3.2",
     "sequelize": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorpaddock/tech-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taylorpaddock/tech-blog/issues"
   }
 }
